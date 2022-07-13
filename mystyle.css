@@ -1,22 +1,53 @@
 .gridDivs {
-    height: 50px;
-    width: 50px;
-    border: 2px solid black;
+    flex-grow: 1;
+    /*height: auto;
+    width: auto;*/
+    min-width: 1px;
+    min-height: 1px;
+    /*border: 1px solid black;*/
     background-color: lightblue;
 } 
 
 #container {
     display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    align-items: center;
+}
+
+#forRows {
+    display: flex;
     justify-content: center;
     align-content: center;
-    background-color: antiquewhite;
+    margin-top: 50px; /*having trouble w justify content in #container so using this for now*/
+    width: 500px;
+    height: 500px;
 }
 
 .row, {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .hit {
     background-color:rgb(255, 0, 0);
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    max-height: 25px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: black;
+    padding: 25px;
+}
+
+/*need to add a max width and height to grid*/
